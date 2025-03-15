@@ -1,5 +1,5 @@
 [SunfFallCoast]
     name = "Sunfall Coast"
-    zindex = 0
+    zindex = 2
     image = "terrain.webp"
     base = true
