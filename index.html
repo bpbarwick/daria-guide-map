@@ -17,12 +17,97 @@
         maxZoom: -1
         });
         /* Instead of a tile layer, use a bitmap image */
-        var bounds = [[0,0], [6500,5000]];
+        var bounds = [[0,0], [6204,5000]];
         var imageUrl = 'map/The Sunfall Coast.jpg';
         L.imageOverlay(imageUrl, bounds).addTo(map);
         map.fitBounds(bounds);
-        L.marker([51.495, -0.075]).addTo(map)
-            .bindPopup("This is Table Mountain.");
+  //Markers      
+  //      var marker = L.marker([51.5, -0.09]).addTo(map); 
+  //          marker.bindPopup('Example Marker').openPopup();
+  //                                            ^ .openPopup() will open the popup when the map loads
+  //Shapes
+        //Black Crag
+        var circle = L.circle([5040, 744], {
+          color: 'transparent',
+          fillColor: '#f03',
+          fillOpacity: 0,
+          radius: 250
+        }).addTo(map);
+          circle.bindPopup('<a href="https://daria.bpbarwick.com/Setting-Guide/Major-Settlements/Black-Crag">Black Crag</a>');
+        //Briarport
+        var circle = L.circle([3688, 2744], {
+          color: 'transparent',
+          fillColor: '#f03',
+          fillOpacity: 0,
+          radius: 250
+        }).addTo(map);
+          circle.bindPopup('<a href="https://daria.bpbarwick.com/Setting-Guide/Major-Settlements/Free-Peoples#Briarport">Briarport</a>');
+        //Cleft
+        var circle = L.circle([4614, 3872], {
+          color: 'transparent',
+          fillColor: '#f03',
+          fillOpacity: 0,
+          radius: 250
+        }).addTo(map);
+          circle.bindPopup('<a href="https://daria.bpbarwick.com/Setting-Guide/Major-Settlements/Free-Peoples#Cleft">Cleft</a>');
+        //Dead City
+        var circle = L.circle([3416, 4768], {
+          color: 'transparent',
+          fillColor: '#f03',
+          fillOpacity: 0,
+          radius: 250
+        }).addTo(map);
+          circle.bindPopup('<a href="https://daria.bpbarwick.com/Setting-Guide/Major-Settlements/Dead-City">The Dead City</a>');
+        //Luminar
+        var circle = L.circle([5944, 2520], {
+          color: 'transparent',
+          fillColor: '#f03',
+          fillOpacity: 0,
+          radius: 250
+        }).addTo(map);
+          circle.bindPopup('<a href="https://daria.bpbarwick.com/Setting-Guide/Major-Settlements/Luminar">Luminar</a>');
+        //Ma Rida
+        var circle = L.circle([992, 224], {
+          color: 'transparent',
+          fillColor: '#f03',
+          fillOpacity: 0,
+          radius: 250
+        }).addTo(map);
+          circle.bindPopup('<a href="https://daria.bpbarwick.com/Setting-Guide/Major-Settlements/Ma-Rida">Ma Rida</a>');
+        //Rimerock
+        var circle = L.circle([5336, 3696], {
+          color: 'transparent',
+          fillColor: '#f03',
+          fillOpacity: 0,
+          radius: 250
+        }).addTo(map);
+          circle.bindPopup('<a href="https://daria.bpbarwick.com/Setting-Guide/Major-Settlements/Rimerock">Rimerock</a>');
+        //Runehearth
+        var circle = L.circle([680, 4512], {
+          color: 'transparent',
+          fillColor: '#f03',
+          fillOpacity: 0,
+          radius: 250
+        }).addTo(map);
+          circle.bindPopup('<a href="https://daria.bpbarwick.com/Setting-Guide/Major-Settlements/Guardian-Mountain-Clans">Guardian Mountain Clans</a>');
+        //Watcher's Gate
+        var circle = L.circle([1996, 2338], {
+          color: 'transparent',
+          fillColor: '#f03',
+          fillOpacity: 0,
+          radius: 250
+        }).addTo(map);
+          circle.bindPopup('<a href="https://daria.bpbarwick.com/Setting-Guide/Major-Settlements/Watcher%E2%80%99s-Gate">Watcher&apos;s Gate</a>');
+        //Wesmar
+        var circle = L.circle([3488, 1008], {
+          color: 'transparent',
+          fillColor: '#f03',
+          fillOpacity: 0,
+          radius: 250
+        }).addTo(map);
+          circle.bindPopup('<a href="https://daria.bpbarwick.com/Setting-Guide/Major-Settlements/Wesmar">Wesmar</a>');
+
+
         var popup = L.popup();
         function onMapClick(e) {
             popup
@@ -41,6 +126,7 @@
       marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
     });
   //Markers
+
     </script>
   </body>
 </html>
