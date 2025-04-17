@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html = style="height: 100%;">
   <head>
-    <title>DnD World Map</title>
+    <title>Daria Map</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scripts/leaflet.css">
     <script src="scripts/leaflet.js"></script>
@@ -32,7 +32,7 @@
 //Define Markers
      //City Circles
       var circle = L.circle([5040, 744], {color: 'transparent', fillColor: '#f03', fillOpacity: 0, radius: 250}).addTo(map);      
-      
+/*      
     //Factions
       //Amber Sun
       var amberSun = L.icon({
@@ -58,7 +58,7 @@
       //Wayward Path
       var waywardPath = L.icon({
         iconUrl: 'assets/factions/waywardpath.png', iconSize: [40, 40]});
-
+*/
 //City Shapes
         //Black Crag
           circle.bindPopup(
@@ -144,7 +144,7 @@
           circle.bindPopup(
             '<a href= "https://daria.bpbarwick.com/Setting-Guide/Major-Locations/Wesmar/" target="_parent"> <img src="assets/Wesmar.png" alt="Wesmar" title="Wesmar" width="100%"> </a> <p><i>conquerors of the sea</i></p> <p>Most advanced sailors in the Saltwash Sea, the Wesmarians link the Sunfall Coast with the lands to the west. Despite their many wars with the Skaldians, their island is considered a utopia by many.</p>'
           );
-          
+/*          
 //Markers
     //Factions
         //Amber Sun
@@ -185,8 +185,8 @@
         var marker = L.marker([2032, 3704], {icon: waywardPath}, {title: "Wayward Path"}).addTo(map); 
         marker.bindPopup('Wayward Path'); 
         marker.bindTooltip("Wayward Path");
-
-//Coordinate Finder        
+*/
+/*//Coordinate Finder        
         var popup = L.popup();
         function onMapClick(e) {
             popup
@@ -204,7 +204,7 @@
     marker.on('dragend', function(e) {
       marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
     });
-
+*/
     </script>
   </body>
 </html>
